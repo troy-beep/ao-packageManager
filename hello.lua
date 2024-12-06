@@ -9,6 +9,7 @@ local decrypted = crypto.cipher.aes.decrypt(encrypted, key, iv).asHex() -- 616F0
 crypto.utils.hex.hexToString(decrypted) -- ao
 
 
+
 Handlers.add(
   "ping",
   Handlers.utils.hasMatchingData("ping"),
