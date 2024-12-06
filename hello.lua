@@ -6,7 +6,7 @@ local key_128 = "cmlc"
 local encrypted = crypto.cipher.aes.encrypt("ao", key, iv).asHex() -- A3B9E6E1FBD9D46930E5F76807C84B8E
 local decrypted = crypto.cipher.aes.decrypt(encrypted, key, iv).asHex() -- 616F0000000000000000000000000000
 
--- crypto.utils.hex.hexToString(decrypted) 
+crypto.utils.hex.hexToString(decrypted) 
 
 
 
