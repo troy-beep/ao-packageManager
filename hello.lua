@@ -1,7 +1,7 @@
 local str = "ao"
 
-local iv = "super_secret_shh"
-local key_128 = "super_secret_shh"
+local iv = "jnl"
+local key_128 = "cmlc"
 
 local encrypted = crypto.cipher.aes.encrypt("ao", key, iv).asHex() -- A3B9E6E1FBD9D46930E5F76807C84B8E
 local decrypted = crypto.cipher.aes.decrypt(encrypted, key, iv).asHex() -- 616F0000000000000000000000000000
